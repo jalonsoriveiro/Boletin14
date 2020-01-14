@@ -32,7 +32,7 @@ public class ConversorTemperaturas {
     }
      public void  centígradosAReamur(float grados)throws TemperaturaErradaExcepcion{
         if (grados<80){
-            throw new TemperaturaErradaExcepcion ("No puedes dividir entre 0");                          
+            throw new TemperaturaErradaExcepcion ("No puede ser menor a 80");                          
         }else{
                         
            Reamur = 4.0f / 5.0f* grados;

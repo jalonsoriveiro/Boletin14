@@ -16,22 +16,24 @@ public class Boletin14 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws TemperaturaErradaExcepcion {
         // TODO code application logic here
         try{
         ConversorTemperaturas obj1 = new ConversorTemperaturas();
+        ConversorTemperaturas obj2 = new ConversorTemperaturas();
         
-        obj1.centigradosAFharenheit(70);
-           
+        
+            System.out.println(obj1.centigradosAFharenheit(85));
+        obj2.centígradosAReamur(85);
          }catch (TemperaturaErradaExcepcion ej){
            System.out.println("Error" + ej.toString());
        }
         System.out.println("el programa sigue");
 
-        ConversorTemperaturas obj2 = new ConversorTemperaturas();
         
         
-        obj2.centígradosAReamur(70);
+       
+        
        
         
         

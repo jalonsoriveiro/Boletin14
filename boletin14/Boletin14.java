@@ -28,7 +28,7 @@ public class Boletin14 {
          }catch (TemperaturaErradaExcepcion ej){
            System.out.println("Error" + ej.toString());
        }
-        System.out.println("el programa sigue");
+        
 
         
         

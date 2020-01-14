@@ -24,11 +24,8 @@ public class ConversorTemperaturas {
         }else{
                         
            Fharenheir = (9f/5f)*grados + 32.4f;
-           return Fharenheir;
-        
-        }        
-        
-        
+           return Fharenheir;        
+        }                        
     }
      public void  centígradosAReamur(float grados)throws TemperaturaErradaExcepcion{
         if (grados<80){

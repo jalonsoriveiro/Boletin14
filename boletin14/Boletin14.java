@@ -21,13 +21,19 @@ public class Boletin14 {
         try{
         ConversorTemperaturas obj1 = new ConversorTemperaturas();
         
-        obj1.centigradosAFharenheit(81);
+        obj1.centigradosAFharenheit(70);
            
          }catch (TemperaturaErradaExcepcion ej){
            System.out.println("Error" + ej.toString());
        }
         System.out.println("el programa sigue");
 
+        ConversorTemperaturas obj2 = new ConversorTemperaturas();
+        
+        
+        obj2.centígradosAReamur(70);
+       
+        
         
     }
     

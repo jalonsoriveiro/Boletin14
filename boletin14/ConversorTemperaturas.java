@@ -14,16 +14,31 @@ public class ConversorTemperaturas {
     
     
     final private  float TEMPERATURA = 80;
-    
+    float Fharenheir;
+    float Reamur;
     
     
     public float  centigradosAFharenheit(float grados)throws TemperaturaErradaExcepcion{
         if (grados<80){
-            throw new TemperaturaErradaExcepcion ("No puedes dividir entre 0");
-              
-        }
+            throw new TemperaturaErradaExcepcion ("No puedes dividir entre 0");                          
+        }else{
+                        
+           Fharenheir = (9f/5f)*grados + 32.4f;
+           return Fharenheir;
         
-        return grados;
+        }        
+        
+        
+    }
+     public void  centígradosAReamur(float grados)throws TemperaturaErradaExcepcion{
+        if (grados<80){
+            throw new TemperaturaErradaExcepcion ("No puedes dividir entre 0");                          
+        }else{
+                        
+           Reamur = 4.0f / 5.0f* grados;
+            System.out.println(Reamur);
+        
+        }        
         
         
     }
